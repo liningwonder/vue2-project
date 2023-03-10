@@ -7,6 +7,12 @@ npm install vue-router@3
 
 npm install element-ui
 
+npm install axios
+
+npm install node-sass
+
+npm install sass-loader
+
 ```
 import Vue from 'vue'
 import ElementUI from 'element-ui';
@@ -55,10 +61,18 @@ const router = new Router({
 export default router;
 ```
 
+vue.config.js
 
+```
+lintOnSave: false
 
+```
 
+jsconfig
 
+```
+"allowJs": true
+```
 
 
 

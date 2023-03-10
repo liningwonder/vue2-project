@@ -11,6 +11,14 @@ import Button from '@/components/Button'
 import VueLink from '@/components/VueLink'
 import MulDiv from '@/components/MulDiv'
 import AllEle from '@/components/AllEle'
+import NotFound from '@/components/404'
+import AxiosTest from '@/components/AxiosTest'
+import BaseDemo from '@/components/BaseDemo'
+import MountedDemo from '@/components/MountedDemo'
+import NavMenu from '@/components/NavMenu'
+import TableDemo from '@/components/TableDemo'
+import FormDemo from '@/components/FormDemo'
+import CopyDemo from '@/components/CopyDemo'
 
 Vue.use(Router)
 
@@ -69,6 +77,46 @@ const routes = [
     path: '/MulDiv',
     name: 'MulDiv',
     component: MulDiv
+  },
+  {
+    path: '/404',
+    name: 'NotFound',
+    component: NotFound
+  },
+  {
+    path: '/axios',
+    name: 'AxiosTest',
+    component: AxiosTest
+  },
+  {
+    path: '/BaseDemo',
+    name: 'BaseDemo',
+    component: BaseDemo
+  },
+  {
+    path: '/MountedDemo',
+    name: 'MountedDemo',
+    component: MountedDemo
+  },
+  {
+    path: '/NavMenu',
+    name: 'NavMenu',
+    component: NavMenu
+  },
+  {
+    path: '/TableDemo',
+    name: 'TableDemo',
+    component: TableDemo
+  },
+  {
+    path: '/FormDemo',
+    name: 'FormDemo',
+    component: FormDemo
+  },
+  {
+    path: '/CopyDemo',
+    name: 'CopyDemo',
+    component: CopyDemo
   }
 ]
 

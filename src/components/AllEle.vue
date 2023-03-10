@@ -1,6 +1,9 @@
 <template>
     <div>
         <div>
+            <router-link to="/Button">Go to Button</router-link>
+        </div>
+        <div>
             <el-input v-model="input" placeholder="请输入内容"></el-input>
         </div>
         <div>
