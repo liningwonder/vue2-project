@@ -3,15 +3,15 @@ npm install -g @vue/cli
 
 vue create lemon-tree
 
-npm install vue-router@3
+npm install vue-router@3 -S
 
-npm install element-ui
+npm install element-ui -S
 
-npm install axios
+npm install axios -S
 
-npm install node-sass
+npm install node-sass -D
 
-npm install sass-loader
+npm install sass-loader -D
 
 ```
 import Vue from 'vue'

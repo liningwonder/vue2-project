@@ -19,6 +19,7 @@ import NavMenu from '@/components/NavMenu'
 import TableDemo from '@/components/TableDemo'
 import FormDemo from '@/components/FormDemo'
 import CopyDemo from '@/components/CopyDemo'
+import MyFormDemo from '@/components/MyFormDemo'
 
 Vue.use(Router)
 
@@ -117,6 +118,11 @@ const routes = [
     path: '/CopyDemo',
     name: 'CopyDemo',
     component: CopyDemo
+  },
+  {
+    path: '/MyFormDemo',
+    name: 'MyFormDemo',
+    component: MyFormDemo
   }
 ]
 

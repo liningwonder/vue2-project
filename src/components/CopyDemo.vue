@@ -69,12 +69,14 @@ $bg:#2d3a4b;
 $light_gray:#eee;
 .login-container {
   .el-input {
+    color: #000;
     display: inline-block;
     height: 47px;
     width: 85%;
     input {
       background: transparent;
       border: 0px;
+      color: #000;
       -webkit-appearance: none;
       border-radius: 0px;
       padding: 12px 5px 12px 15px;

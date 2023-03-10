@@ -1,21 +1,32 @@
 <template>
-    <div style="margin: 20px;" class="login">
+    <div>
         <div class="title-container">
             <h3 class="title">中国银联</h3>
         </div>
-        <el-form ref="loginForm" :model="loginForm" label-width="30%" label-heigth="30%">
-            <el-form-item label="用户名" class="icon" icon="el-icon-user" label-position="right" label-width="30%" label-heigth="30%">
-                <el-input v-model="loginForm.userName" label-width="30%" label-heigth="30%"></el-input>
-            </el-form-item>
-            <el-form-item label="密码" class="icon" icon="el-icon-lollipop" label-position="right" label-width="30%" label-heigth="30%">
-                <el-input v-model="loginForm.password" show-password label-width="30%" label-heigth="30%"></el-input>
-            </el-form-item>
-            <el-form-item label="验证码" label-position="right" label-width="30%" label-heigth="30%">
-                <el-input class="icon" v-model="loginForm.captcha" label-width="30%" label-heigth="30%"></el-input>
-                <span><el-image class="icon" :src="captchaUrl" @click="refreshCaptcha"></el-image></span>
-            </el-form-item>
-            <el-button class="icon" type="primary" @click="login">登 录</el-button>
-        </el-form>
+        <div style="margin: 20px;"></div>
+        <div class="form-container">
+            <el-form ref="loginForm" :model="loginForm" :label-position="left" label-width="100px">
+                <el-form-item label="用户名">
+                    <el-input v-model="loginForm.userName"></el-input>
+                </el-form-item>
+                <el-form-item label="密码">
+                    <el-input v-model="loginForm.password" show-password></el-input>
+                </el-form-item>
+                <el-form-item label="验证码">
+                    <el-input v-model="loginForm.captcha"></el-input>
+                    <span><el-image :src="captchaUrl" @click="refreshCaptcha"></el-image></span>
+                </el-form-item>
+                <el-form-item label="活动区域">
+                    <el-select v-model="loginForm.region" placeholder="活动区域">
+                        <el-option label="区域一" value="shanghai"></el-option>
+                        <el-option label="区域二" value="beijing"></el-option>
+                    </el-select>
+                </el-form-item>
+                <el-form-item>
+                    <el-button type="primary" @click="login">登 录</el-button>
+                </el-form-item>
+            </el-form>
+        </div>
     </div>
 </template>
 
@@ -28,6 +39,7 @@ export default {
                 userName: '',
                 password: '',
                 captcha: '',
+                region: ''
             },
             captchaUrl: ''
         }
@@ -92,6 +104,4 @@ export default {
 
 </script>
 
-<style>
-
-</style>
+<style></style>
